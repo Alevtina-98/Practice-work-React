@@ -1,0 +1,17 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+}
