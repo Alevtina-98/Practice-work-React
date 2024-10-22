@@ -1,4 +1,5 @@
 import "./Sidebar.css";
+import Topics from "../../components/Topics";
 import data from "../../data/data.json";
 
 const Sidebar = () => {
@@ -6,11 +7,7 @@ const Sidebar = () => {
     <div className="Sidebar">
       <nav>
         <ul>
-          {data.map((obj, index) => (
-            <li key={index}>
-              <a href={obj.href}>{obj.title}</a>
-            </li>
-          ))}
+          <Topics data={data} />
         </ul>
       </nav>
     </div>
